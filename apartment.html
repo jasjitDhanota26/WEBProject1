@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Author Jasjit Singh Dhanota, 000887626-->
+    <meta charset="UTF-8">
+    <title>Sandy and Leslie's apartment</title>
+    <link rel="stylesheet" href="apartemntlayout.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+    <style>
+        h3 {
+            background-color: indianred;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sandy and Leslie's apartment</h1>
+    <p class="p">Click a room for a detailed view.</p>
+    <div class="img">
+        <img src="images/apartmentfloorplan.jpg" alt="apartmentfloorplan" usemap="#image_map">
+        <map name="image_map">
+            <area href="bedroom.html" coords="43,104,188,272" shape="rect" alt="bedroom">
+            <area href="livingroom.html" coords="192,102,343,273" shape="rect" alt="livingroom">
+            <area href="kitchen.html" coords="184,275,295,391" shape="rect" alt="kitchen">
+            <area href="diningroom.html" coords="347,338,49" shape="circle" alt="diningroom">
+            <area href="bedroom.html" coords="388,107,394,239,492,245,502,305,581,309,553,106" shape="poly" alt="bedroom">
+        </map>
+
+    </div>
+    <nav>
+        <ul>
+            <li><a href="apartment.html">Apartment</a></li>
+            <li><a href="bedroom.html">Bedroom 1</a></li>
+            <li><a href="bedroom.html">Bedroom 2</a></li>
+            <li><a href="diningroom.html">Dining Room</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li class="no-border"><a href="livingroom.html">Living Room </a></li>
+        </ul>
+    </nav>
+    <div class="grid-1">
+        <div class="grid-2">
+            <div>
+                <h2 class="yellow">Welcome message</h2>
+                <audio controls>
+                    <source src="apartment.mp3">
+                </audio>
+                <p>Transcript: Hello. Welcome to our apartment. You'll really enjoy living here. The rooms are spacious
+                    and
+                    the
+                    apartment building amenities are fantastic. We look forward to hearing from you!</p>
+            </div>
+            <div>
+                <h2 class="yellow">Survey</h2>
+                <p>How did you find out about apartment? Check any that apply:</p>
+                <form>
+                    <div>
+                        <input type="checkbox" name="checkbox">Web search
+                        <input type="checkbox" name="checkbox">Friend
+                        <input type="checkbox" name="checkbox">Newspaper
+                    </div>
+
+                    <input type="button" value="Sumbit">
+                    <input type="button" value="Reset form">
+
+                </form>
+
+            </div>
+        </div>
+        <div>
+            <h2 class="yellow">Apartment services:</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Day/Hours</th>
+                </tr>
+                <tr>
+                    <td>Gym</td>
+                    <td rowspan="2">Monday-Friday 6am - 10pm <br>
+                        Saturday 8am -8pm <br>
+                        Sunday 8am -5pm</td>
+                </tr>
+                <tr>
+                    <td>pool</td>
+                </tr>
+                <tr>
+                    <td>Laundry</td>
+                    <td>24/7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="lightgreen">Please do not allow people you do not know to use these
+                        facilities.</td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <h2 class="yellow">Location</h2>
+            <img class="location-img" src="images/location.png" alt="location">
+        </div>
+    </div>
+    <h2 class="yellow">Gallery</h2>
+    <div class="flex">
+        <div class="grid-3">
+            <h3>Balcony</h3>
+            <img src="images/thumbnails/balcony_sm.jpg" alt="balcony_sm">
+        </div>
+        <div class="grid-3">
+            <h3>Bathroom</h3>
+            <img src="images/thumbnails/bathroom_sm.jpg" alt="bathroom_sm">
+        </div>
+        <div class="grid-3">
+            <h3>Bedroom</h3>
+            <img src="images/thumbnails/bedroom_sm.jpg" alt="bedroom_sm">
+        </div>
+        <div class="grid-3">
+            <h3>Dining Room</h3>
+            <img src="images/thumbnails/diningroom_sm.jpg" alt="diningroom_sm">
+        </div>
+        <div class="grid-3">
+            <h3>Kitchen</h3>
+            <img src="images/thumbnails/kitchen_sm.jpg" alt="kitchen_sm">
+        </div>
+        <div class="grid-3">
+            <h3>Living Room</h3>
+            <img src="images/thumbnails/livingroom_sm.jpg" alt="livingroom_sm">
+        </div>
+    </div>
+    <footer>
+        <p>For more inofrmation contact: <a href="mailto:apartment@example.com">SandyAndleslie@example.com</a> or <a
+                href="tel:9055551234">(905) 555-1234</a></p>
+        <p>&#169;SandyAndLeslie 2022 </p>
+    </footer>
+
+</body>
+
+</html>

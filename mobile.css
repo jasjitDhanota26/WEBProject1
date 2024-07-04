@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    li {
+        display: block;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-1 {
+        display: block;
+    }
+}
